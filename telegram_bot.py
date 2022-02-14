@@ -24,7 +24,7 @@ def answer_start(message):
 @bot.callback_query_handler(func=lambda call:True)
 def send_course(call):
     if call.data:
-        murkup_reply = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        murkup_reply = types.ReplyKeyboardMarkup(resize_keyboard=True)  # Создаёт три шаблона ответа
         btn_1 = types.KeyboardButton(f'{call.data} morning')
         btn_2 = types.KeyboardButton(f'{call.data} evening')
         btn_3 = types.KeyboardButton(f'{call.data} bootcamp')
