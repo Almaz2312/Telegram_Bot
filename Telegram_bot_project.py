@@ -46,7 +46,6 @@ def send_cource(call):
                          )
 
         
-    
 @bot.message_handler(content_types=['text'])
 def model(message):
     choice = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -121,94 +120,110 @@ def model(message):
 
 
     if message.text == 'LIFEBOOK U9311':
-        text = f'Intel  Core i7-1185G7, RAM: 32GB, 1TB SSD, The Intel Iris Xe Graphics. Цена: 2500 USD.'
+        text = f'Intel  Core i7-1185G7, RAM: 32GB, 1TB SSD, The Intel Iris Xe Graphics. Цена: 2500 USD.' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'LIFEBOOK U7311':
-        text = f'Intel Core i5-1135G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7 (80 EUs). Цена: 2100 USD'
+        text = f'Intel Core i5-1135G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7 (80 EUs). Цена: 2100 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'LIFEBOOK U7411':
-        text = f'Intel Core i5-1145G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7. Цена: 2100 USD 1500 USD'
+        text = f'Intel Core i5-1145G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7. Цена: 2100 USD 1500 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ExpertBook':
-        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris. Цена: 2050 USD'
+        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris. Цена: 2050 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ASUSPRO':
-        text = f'Pentium N6000, RAM: 4GB, 128GB SSD, Intel UHD Graphics. Цена: 400 USD'
+        text = f'Pentium N6000, RAM: 4GB, 128GB SSD, Intel UHD Graphics. Цена: 400 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ZenBook':
-        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris XE Graphics. Цена: 1500 USD'
+        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris XE Graphics. Цена: 1500 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Ideapad 3':
-        text = f'Intel Core i7-1165G7, RAM: 20GB, 1T SSD, Intel NVIDIA MX450. Цена: 1000 USD'
+        text = f'Intel Core i7-1165G7, RAM: 20GB, 1T SSD, Intel NVIDIA MX450. Цена: 1000 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Thinkpad X1 Yoga Gen 5':
-        text = f'Intel Core i5-10210U, RAM: 8GB, 256GB SSD, UHD Graphics 620. Цена: 1700 USD'
+        text = f'Intel Core i5-10210U, RAM: 8GB, 256GB SSD, UHD Graphics 620. Цена: 1700 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Ideapad Gaming 3':
-        text = f'AMD Ryzen 5 4600H, RAM: 32GB DDR, 512B SSD, NVIDIA GeForce GTX1650. Цена: 1100 USD'
+        text = f'AMD Ryzen 5 4600H, RAM: 32GB DDR, 512B SSD, NVIDIA GeForce GTX1650. Цена: 1100 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi 9A':
         text = f'RAM:4, 32GB, Sky Blue. Цена: 120 USD' \
-               # f'Вы уверены что хотите купить этот - {message.text}'
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi 10':
         text = f'RAM:4, 128GB, Sea Blue. Цена: 250 USD' \
-               # f'Вы уверены что хотите купить этот - {message.text}'
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi Note 9':
-        text = f'RAM:4, 128GB, Polar White. Цена: 200 USD'
+        text = f'RAM:4, 128GB, Polar White. Цена: 200 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 13':
-        text = f'128GB. Цена: 930 USD'
+        text = f'128GB. Цена: 930 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 12':
-        text = f'128GB. Цена: 830 USD'
+        text = f'128GB. Цена: 830 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 11':
-        text = f'128GB. Цена: 700 USD'
+        text = f'128GB. Цена: 700 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy A22':
-        text = f'RAM:4, 64GB. Цена: 220 USD'
+        text = f'RAM:4, 64GB. Цена: 220 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy A12(A125)':
-        text = f'RAM:4, 64GB. Цена: 170 USD'
+        text = f'RAM:4, 64GB. Цена: 170 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy Note 10':
-        text = f'RAM:4, 64GB. Цена: 850 USD'
+        text = f'RAM:4, 64GB. Цена: 850 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
