@@ -48,9 +48,15 @@ def send_cource(call):
                          reply_markup=murkup_reply
                          )
 
+<<<<<<< HEAD
 
 @bot.message_handler(content_types=['text'])    # Все 3 функции вставил в одну.
 def model(message):                             # Повторяющиеся функции вписал в одну и вызывал их внизу.
+=======
+        
+@bot.message_handler(content_types=['text'])
+def model(message):
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
     choice = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn_yes = 'Да'
     btn_no = 'Нет'
@@ -124,109 +130,198 @@ def model(message):                             # Повторяющиеся ф�
 
     if message.text == 'LIFEBOOK U9311':
         text = f'Intel  Core i7-1185G7, RAM: 32GB, 1TB SSD, The Intel Iris Xe Graphics. Цена: 2500 USD.' \
+<<<<<<< HEAD
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'LIFEBOOK U7311':
+<<<<<<< HEAD
         text = f'Intel Core i5-1135G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7 (80 EUs). Цена: 2100 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel Core i5-1135G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7 (80 EUs). Цена: 2100 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'LIFEBOOK U7411':
+<<<<<<< HEAD
         text = f'Intel Core i5-1145G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7. Цена: 2100 USD 1500 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel Core i5-1145G7, RAM: 16GB, 512GB SSD, The Intel Iris Xe Graphics G7. Цена: 2100 USD 1500 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ExpertBook':
+<<<<<<< HEAD
         text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris. Цена: 2050 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris. Цена: 2050 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ASUSPRO':
+<<<<<<< HEAD
         text = f'Pentium N6000, RAM: 4GB, 128GB SSD, Intel UHD Graphics. Цена: 400 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Pentium N6000, RAM: 4GB, 128GB SSD, Intel UHD Graphics. Цена: 400 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'ZenBook':
+<<<<<<< HEAD
         text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris XE Graphics. Цена: 1500 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel i7-1165G7, RAM: 16GB, 1T SSD, Intel Iris XE Graphics. Цена: 1500 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Ideapad 3':
+<<<<<<< HEAD
         text = f'Intel Core i7-1165G7, RAM: 20GB, 1T SSD, Intel NVIDIA MX450. Цена: 1000 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel Core i7-1165G7, RAM: 20GB, 1T SSD, Intel NVIDIA MX450. Цена: 1000 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Thinkpad X1 Yoga Gen 5':
+<<<<<<< HEAD
         text = f'Intel Core i5-10210U, RAM: 8GB, 256GB SSD, UHD Graphics 620. Цена: 1700 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'Intel Core i5-10210U, RAM: 8GB, 256GB SSD, UHD Graphics 620. Цена: 1700 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Ideapad Gaming 3':
+<<<<<<< HEAD
         text = f'AMD Ryzen 5 4600H, RAM: 32GB DDR, 512B SSD, NVIDIA GeForce GTX1650. Цена: 1100 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'AMD Ryzen 5 4600H, RAM: 32GB DDR, 512B SSD, NVIDIA GeForce GTX1650. Цена: 1100 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi 9A':
+<<<<<<< HEAD
         text = f'RAM:4, 32GB, Sky Blue. Цена: 120 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 32GB, Sky Blue. Цена: 120 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi 10':
+<<<<<<< HEAD
         text = f'RAM:4, 128GB, Sea Blue. Цена: 250 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 128GB, Sea Blue. Цена: 250 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Xiaomi Redmi Note 9':
+<<<<<<< HEAD
         text = f'RAM:4, 128GB, Polar White. Цена: 200 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 128GB, Polar White. Цена: 200 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 13':
+<<<<<<< HEAD
         text = f'128GB. Цена: 930 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'128GB. Цена: 930 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 12':
+<<<<<<< HEAD
         text = f'128GB. Цена: 830 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'128GB. Цена: 830 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Iphone 11':
+<<<<<<< HEAD
         text = f'128GB. Цена: 700 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'128GB. Цена: 700 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy A22':
+<<<<<<< HEAD
         text = f'RAM:4, 64GB. Цена: 220 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 64GB. Цена: 220 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy A12(A125)':
+<<<<<<< HEAD
         text = f'RAM:4, 64GB. Цена: 170 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 64GB. Цена: 170 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
     if message.text == 'Samsung Galaxy Note 10':
+<<<<<<< HEAD
         text = f'RAM:4, 64GB. Цена: 850 USD.' \
                f' Вы уверены что хотите купить этот - {message.text}?'
+=======
+        text = f'RAM:4, 64GB. Цена: 850 USD' \
+               f'Вы уверены что хотите купить этот - {message.text}'
+>>>>>>> 7b3862a0e86772984a5c513077f0cf6258b169d2
         bot.send_message(message.chat.id, text,
                          reply_markup=choice)
 
